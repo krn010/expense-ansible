@@ -88,8 +88,8 @@
 
     - name: Configure Backend Service
       ansible.builtin.copy:
-      src: backend.service
-      dest: /etc/systemd/system/backend.service
+        src: backend.service
+        dest: /etc/systemd/system/backend.service
 
     - name: Add a application user
       ansible.builtin.user:

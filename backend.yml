@@ -97,7 +97,7 @@
 
     - name: Remove existing App content
       ansible.builtin.file:
-        pah: /app
+        path: /app
         state: absent
 
     - name: Create Application Directory

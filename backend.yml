@@ -103,7 +103,7 @@
     - name: Create Application Directory
       ansible.builtin.file:
         path: /app
-        state: present
+        state: directory
 
     - name: Download and extract App Content
       ansible.builtin.unarchive:

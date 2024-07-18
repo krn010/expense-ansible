@@ -102,7 +102,7 @@
 
     - name: Create Application Directory
       ansible.builtin.file:
-        pah: /app
+        path: /app
         state: present
 
     - name: Download and extract App Content

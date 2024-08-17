@@ -126,6 +126,7 @@
         name: mysql
         state: installed
 
+
     - name: Install MySQL Client
       ansible.builtin.dnf:
         name: python3-PyMySQL

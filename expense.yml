@@ -17,11 +17,11 @@
 
 #mysql_secure_installation --set-root-pass ${MYSQL_PASSWORD}
 
-- name: MySql Setup
+- name: Expense Project Setup
   hosts: all
   become: yes
   roles:
-    - mysql
+    - {{ service_name }}
 
 
 

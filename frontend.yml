@@ -42,6 +42,6 @@
   hosts: all
   become: true
   roles:
-    - name: frontend
+    - frontend
 
 

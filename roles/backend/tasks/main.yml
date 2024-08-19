@@ -52,4 +52,4 @@
     target: /app/schema/backend.sql
     login_user: root
     login_password: ExpenseApp@1
-    login_host: 172.31.32.151
+    login_host: mysql-dev.krndevops.online

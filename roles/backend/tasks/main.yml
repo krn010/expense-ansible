@@ -50,7 +50,7 @@
     state: import
     name: all
     target: /app/schema/backend.sql
-    login_user: "{{ lookup('amazon.aws.aws_ssm', '{{env}}.expense.rds.password', region='us-east-1' ) }}"
+    login_user: "{{ lookup('amazon.aws.aws_ssm', '{{env}}.expense.rds.username', region='us-east-1' ) }}"
     login_password: "{{ lookup('amazon.aws.aws_ssm', '{{env}}.expense.rds.password', region='us-east-1' ) }}"
     login_host: "{{ lookup('amazon.aws.aws_ssm', '{{env}}.expense.endpoint.password', region='us-east-1' ) }}"
 

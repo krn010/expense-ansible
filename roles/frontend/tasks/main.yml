@@ -1,6 +1,6 @@
 - name: Install Nginx
   ansible.builtin.dnf:
-    name: httpd
+    name: nginx
     state: installed
 
 - name: Copy file with owner and permissions

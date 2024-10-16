@@ -31,8 +31,9 @@
 - name: Reloading SystemD and start Backend Service
   ansible.builtin.systemd_service:
     name: backend
-    enabled: yes
     state: restarted
+    enabled: yes
+    daemon-reload: yes
 
 - name: Install MySQL Client and Python Library for MySQL
   ansible.builtin.dnf:
